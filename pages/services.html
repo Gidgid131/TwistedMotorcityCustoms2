@@ -1,0 +1,137 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Gideon Swanson">
+    <title>Twisted Motorcity Customs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/Logo.JPG">
+    <link rel="stylesheet" href="../styles/services.css">
+    <link rel="stylesheet" href="../code-reuse/header/CSS/header.css"
+</head>
+<body>
+    <header class="header">
+        <img class="logo" src="../images/Logo.JPG">
+        <img class="banner" src="../images/Banner.JPG">
+        <nav class="social-media">
+            <ul>
+                <li><a href="https://www.instagram.com/gids_bike_garage/"><img src="../images/icons8-instagram-24.png"></a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100079176052317"><img src="../images/icons8-facebook-24.png"></a></li>
+                <li><a href="https://www.youtube.com/channel/UCWZ4kfP5AWR34XCB2qriAvw"><img src="../images/icons8-youtube-50.png"></a></li>
+                <li><a href="https://www.tiktok.com/@gideonswanson807?lang=en"><img src="../images/icons8-tiktok-50.png"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="grid-container-menu">
+        <div class="grid-container-home"><a href="../index.html" >Home</a></div>
+        <div class="grid-container-catalog"><a href="../pages/catalog.html">Catalog</a></div>
+        <div class="grid-container-services"><a href="" style="color: rgb(255, 242, 0);">Services</a></div>
+        <div class="grid-container-meet_the_crew"><a href="../pages/meet_the_crew.html">Meet the Crew</a></div>
+        <div class="grid-container-contact"><a href="../pages/contact_us.html">Contact us</a></div>
+    </div>
+    <main>
+        <div class="sidebar">
+            <div class="sidebar-wrapper">
+                <h1><a href="" style="color: white;">Service Menu</a></h1>
+                <ul class="categories">
+                  <li><a href="#">General Maintenance</a></li>
+                  <li><a href="#">Motorcycle Repair</a></li>
+                  <li><a href="#">Car Repairs</a></li>
+                  <li><a href="#">Engine Swaps</a></li>
+                  <li><a href="#">Custom Parts Fabrication</a></li>
+                  <li><a href="#">Delivery</a></li>
+                </ul>
+              </div>
+        </div>
+            <script>
+                let sidebar = document.getElementsByClassName("sidebar")[0];
+                let sidebar_content = document.getElementsByClassName("sidebar-wrapper")[0];
+
+                window.onscroll = () => {
+                    let scrollTop = window.scrollY;
+                    let viewportHeight = window.innerHeight;
+                    let contentHeight = sidebar_content.getBoundingClientRect().height;
+
+                    if(scrollTop >= contentHeight - viewportHeight + 260) {
+                        sidebar_content.style.transform = `translateY(-${contentHeight - viewportHeight + 260}px)`;
+                        sidebar_content.style.position = "fixed";
+                    }
+                    else {
+                        sidebar_content.style.transform = "";
+                        sidebar_content.style.position = "";
+                    }
+                }
+             </script>
+        </main>
+        <h2>General Maintenance</h2>
+        <div class="grid-container-gm">
+            <div class="grid-item grid-item-1-gm"><img class="general_maintenance-gm" src="../images/oil_change.jpg"></div>
+            <div class="grid-item grid-item-2-gm"><p class="general_maintenance_text-gm">To ensure your vehicle is healthy, you should do regular maintenance. Here's a list of the maintenance services we offer.</p></div>
+            <div class="grid-item grid-item-3-gm"><img class="general_maintenance-gm" src="../images/tire_change.jpg"></div>
+            <div class="grid-item grid-item-4-gm">
+                <div class="grid-container_2-gm">
+                    <div class="price-column-1-gm"><p>Oil Change: $99.99 <br><br> Oil Filter Change: $99.99 <br><br> Tire Change: $99.99 </p></div>
+                    <div class="price-column-2-gm"><p>Spark Plug Change: $99.99 <br><br> Air Filter Change: $99.99 <br><br> Tire Rotation: $99.99 </p></div>
+                </div>
+            </div>
+        </div>
+        <h2>Motorcycle Repair</h2>
+        <div class="grid-container-mr">
+            <div class="grid-item grid-item-1-mr"><img class="motorcycle_repair-mr" src="../images/harley_repairs.jpg"></div>
+            <div class="grid-item grid-item-2-mr"><p class="motorcycle_repair_text-mr">Problems with your motorcycle? We can fix it. We specialize in fixing and repairing all standard, American-made motorcycles.</p></div>
+            <div class="grid-item grid-item-3-mr"><img class="motorcycle_repair-mr" src="../images/harley_engine.jpg"></div>
+            <div class="grid-item grid-item-4-mr">
+                <div class="grid-container_2-mr">
+                    <div class="price-column-1-mr"><p>Repairs: $50 per hour</p></div>
+                    <div class="price-column-2-mr"><p>Engine Repairs: $75 per hour</p></div>
+                </div>
+            </div>
+        </div>
+        <h2>Car Repairs</h2>
+        <div class="grid-container-mr">
+            <div class="grid-item grid-item-1-cr"><img class="car_repair-cr" src="../images/harley_repairs.jpg"></div>
+            <div class="grid-item grid-item-2-cr"><p class="car_repair_text-cr">Problems with your motorcycle? We can fix it. We specialize in fixing and repairing all standard, American-made motorcycles.</p></div>
+            <div class="grid-item grid-item-3-cr"><img class="car_repair-cr" src="../images/harley_engine.jpg"></div>
+            <div class="grid-item grid-item-4-cr">
+                <div class="grid-container_2-cr">
+                    <div class="price-column-1-cr"><p>Repairs: $75 per hour</p></div>
+                    <div class="price-column-2-cr"><p>Engine Repairs: $100 per hour</p></div>
+                </div>
+            </div>
+        </div>
+        <h2>Engine Swaps</h2>
+        <div class="grid-container-es">
+            <div class="grid-item grid-item-1-es"><img class="engine_swap-es" src="../images/harley_repairs.jpg"></div>
+            <div class="grid-item grid-item-2-es"><p class="engine_swap_text-es">Problems with your motorcycle? We can fix it. We specialize in fixing and repairing all standard, American-made motorcycles.</p></div>
+            <div class="grid-item grid-item-3-es"><img class="engine_swap-es" src="../images/harley_engine.jpg"></div>
+            <div class="grid-item grid-item-4-es">
+                <div class="grid-container_2-es">
+                    <div class="price-column-1-es"><p>Repairs: $75 per hour</p></div>
+                    <div class="price-column-2-es"><p>Engine Repairs: $100 per hour</p></div>
+                </div>
+            </div>
+        </div>
+        <h2>Custom Parts Fabrication</h2>
+        <div class="grid-container-cpf">
+            <div class="grid-item grid-item-1-cpf"><img class="custom_parts_fabrication-cpf" src="../images/harley_repairs.jpg"></div>
+            <div class="grid-item grid-item-2-cpf"><p class="custom_parts_fabrication_text-cpf">Problems with your motorcycle? We can fix it. We specialize in fixing and repairing all standard, American-made motorcycles.</p></div>
+            <div class="grid-item grid-item-3-cpf"><img class="custom_parts_fabrication-cpf" src="../images/harley_engine.jpg"></div>
+            <div class="grid-item grid-item-4-cpf">
+                <div class="grid-container_2-cpf">
+                    <div class="price-column-1-cpf"><p>Repairs: $75 per hour</p></div>
+                    <div class="price-column-2-cpf"><p>Engine Repairs: $100 per hour</p></div>
+                </div>
+            </div>
+        </div>
+        <h2>Delivery</h2>
+        <div class="grid-container-d">
+            <div class="grid-item grid-item-1-d"><img class="delivery-d" src="../images/harley_repairs.jpg"></div>
+            <div class="grid-item grid-item-2-d"><p class="delivery_text-d">Problems with your motorcycle? We can fix it. We specialize in fixing and repairing all standard, American-made motorcycles.</p></div>
+            <div class="grid-item grid-item-3-d"><img class="delivery-d" src="../images/harley_engine.jpg"></div>
+            <div class="grid-item grid-item-4-d">
+                <div class="grid-container_2-d">
+                    <div class="price-column-1-d"><p>Repairs: $75 per hour</p></div>
+                    <div class="price-column-2-d"><p>Engine Repairs: $100 per hour</p></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

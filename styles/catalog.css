@@ -1,0 +1,154 @@
+@media only screen and (max-width: 480px) {
+    /* Sidebar Styling -----------------------------------------------------------------------------------------------------------------------------------*/
+
+    .rotate-btn{
+        margin-top: 0px;
+      }
+      
+      /* body Styling -----------------------------------------------------------------------------------------------------------------------------------*/
+      
+      body{
+          background-color: black;
+          margin-top: 0px;
+          margin-left: 0px;
+          margin-right: 0px;
+      }
+      
+      h2{
+          margin-top: 0px;
+          padding-top: 15px;
+          margin-bottom: 25px;
+          border-bottom: 5px solid rgb(255, 242, 0);
+          padding-bottom: 15px;
+          color:white;
+          text-align: center;
+          font-size: 36px;
+      }
+      
+      /* Product Styling -----------------------------------------------------------------------------------------------------------------------------------*/
+      
+      
+      .product-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: repeat(auto-fit, minmax(200px, 1fr)); /* Change the number of rows to adjust to the screen size */
+          margin-left: 20px;
+          margin-right: 20px;
+      }
+      
+      .grid-item {
+          padding: 20px;
+          text-align: center;
+          border: 5px solid rgb(255, 242, 0);
+          background-color: rgb(105, 105, 105);
+      }
+      
+      .grid-item img {
+          max-width: 100%;
+          margin-bottom: 10px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          align-self: flex-start;
+          max-height: 100%;
+      }
+      
+      h3 {
+          color: white;
+          font-size: 18px; /* Decrease the font size for smaller screens */
+          font-weight: bold;
+      }
+      
+      p {
+          color: white;
+          font-size: 20px; /* Decrease the font size for smaller screens */
+          font-weight: bold;
+      }
+    
+      @media only screen and (max-width: 430px){
+        .product-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(auto-fit, minmax(200px, 1fr)); /* Change the number of rows to adjust to the screen size */
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+        
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+}
+
+@media only screen and (min-width: 1025px) {
+
+/* Sidebar Styling -----------------------------------------------------------------------------------------------------------------------------------*/
+
+.rotate-btn{
+  margin-top: 0px;
+}
+
+/* body Styling -----------------------------------------------------------------------------------------------------------------------------------*/
+
+body{
+    background-color: black;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+h2{
+    margin-left: 250px;
+    margin-top: 0px;
+    padding-top: 15px;
+    margin-bottom: 25px;
+    border-bottom: 5px solid rgb(255, 242, 0);
+    padding-bottom: 15px;
+    color:white;
+    text-align: center;
+    font-size: 72px;
+}
+
+/* Product Styling -----------------------------------------------------------------------------------------------------------------------------------*/
+
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    margin-left: 300px;
+    margin-right: 40px;
+}
+
+.grid-item {
+    padding: 20px;
+    text-align: center;
+    border: 5px solid rgb(255, 242, 0);
+    background-color: rgb(105, 105, 105);
+}
+
+.grid-item img {
+    max-width: 100%;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: flex-start;
+    max-height: 100%;
+}
+
+h3 {
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+p {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+}

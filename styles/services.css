@@ -1,0 +1,452 @@
+/* Sidebar Styling -----------------------------------------------------------------------------------------------------------------------------------*/
+
+.sidebar-wrapper {
+    position: absolute;
+    left: 0;
+    width: 262px;
+    height: 100%;
+    background: rgb(66, 0, 128);
+    border-right: 5px solid rgb(255, 242, 0);
+  }
+  
+  .sidebar-wrapper h1 {
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: rgb(108, 0, 194);
+    user-select: none;
+  }
+
+  .sidebar-wrapper .categories {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.sidebar-wrapper .categories a {
+    display: block;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 20px;
+    box-sizing: border-box;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    transition: .4s;
+  }
+  
+  .sidebar-wrapper .categories li:hover > a {
+    background-color: #f4f4f4;
+    color: black;
+    padding-left: 40px;
+  }
+  
+  .sidebar-wrapper .categories ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+  }
+  
+  .sidebar-wrapper .categories ul li a {
+    line-height: 40px;
+    font-size: 16px;
+    border: none;
+    background-color: rgb(77, 0, 144);
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+  }
+  
+  .sidebar-wrapper .categories ul li a:hover {
+    background-color: rgb(108, 0, 194);
+  }
+/* body Styling -----------------------------------------------------------------------------------------------------------------------------------*/
+
+body {
+    background-color: black;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  
+
+h2{
+    margin-left: 250px;
+    margin-top: 0px;
+    padding-top: 15px;
+    margin-bottom: 25px;
+    border-bottom: 5px solid rgb(255, 242, 0);;
+    padding-bottom: 15px;
+    color:white;
+    text-align: center;
+    font-size: 72px;
+}
+
+/* Service Grid Styling General Maintanence -----------------------------------------------------------------------------------------------------*/
+
+.grid-container-gm{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    margin-left: 300px;
+    margin-right: 40px;
+    background-color: rgb(105, 105, 105);
+}
+
+.grid-item-1-gm{
+    border-top: 5px solid rgb(255, 242, 0);;
+    border-left: 5px solid rgb(255, 242, 0);;
+}
+
+.grid-item-2-gm{
+    border-top: 5px solid rgb(255, 242, 0);
+    border-right: 5px solid rgb(255, 242, 0);
+}
+
+.grid-item-3-gm{
+    border-left: 5px solid rgb(255, 242, 0);
+    border-bottom: 5px solid rgb(255, 242, 0);
+}
+
+.grid-item-4-gm{
+    border-right: 5px solid rgb(255, 242, 0);
+    border-bottom: 5px solid rgb(255, 242, 0);
+}
+
+.general_maintenance-gm{
+    width: 450px;
+    margin-top: 20px;
+    margin-left: 65px;
+}
+
+.general_maintenance_text-gm{
+    color: white;
+    font-size: 32px;
+    margin-right: 20px;
+    margin-top: 100px;
+}
+
+.grid-container_2-gm{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px;
+}
+
+.price-column-1-gm{
+    color: white;
+    font-size: 24px;
+}
+
+.price-column-2-gm{
+    color: white;
+    font-size: 24px;
+}
+
+/* Service Grid Styling Motorcycle Repair -----------------------------------------------------------------------------------------------------*/
+
+.grid-container-mr{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    margin-left: 300px;
+    margin-right: 40px;
+    background-color: rgb(105, 105, 105);
+}
+
+.grid-item-1-mr{
+    border-top: 5px solid rgb(255, 242, 0);
+    border-left: 5px solid rgb(255, 242, 0);
+}
+
+.grid-item-2-mr{
+    border-top: 5px solid rgb(255, 242, 0);
+    border-right: 5px solid rgb(255, 242, 0);
+}
+
+.grid-item-3-mr{
+    border-left: 5px solid rgb(255, 242, 0);
+    border-bottom: 5px solid rgb(255, 242, 0);
+}
+
+.grid-item-4-mr{
+    border-right: 5px solid rgb(255, 242, 0);
+    border-bottom: 5px solid rgb(255, 242, 0);
+}
+
+.motorcycle_repair-mr{
+    width: 450px;
+    margin-top: 20px;
+    margin-left: 65px;
+    height: 255px;
+}
+
+.motorcycle_repair_text-mr{
+    color: white;
+    font-size: 32px;
+    margin-right: 20px;
+    margin-top: 100px;
+}
+
+.grid-container_2-mr{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px;
+}
+
+.price-column-1-mr{
+    color: white;
+    font-size: 24px;
+}
+
+.price-column-2-mr{
+    color: white;
+    font-size: 24px;
+}
+
+/* Service Grid Styling Car Repair -----------------------------------------------------------------------------------------------------*/
+
+.grid-container-cr{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    margin-left: 300px;
+    margin-right: 40px;
+    background-color: rgb(105, 105, 105);
+}
+
+.grid-item-1-cr{
+    border-top: 5px solid rgb(255, 242, 0);
+    border-left: 5px solid rgb(255, 242, 0);
+}
+
+.grid-item-2-cr{
+    border-top: 5px solid rgb(255, 242, 0);
+    border-right: 5px solid rgb(255, 242, 0);
+}
+
+.grid-item-3-cr{
+    border-left: 5px solid rgb(255, 242, 0);
+    border-bottom: 5px solid rgb(255, 242, 0);
+}
+
+.grid-item-4-cr{
+    border-right: 5px solid rgb(255, 242, 0);
+    border-bottom: 5px solid rgb(255, 242, 0);
+}
+
+.car_repair-cr{
+    width: 450px;
+    margin-top: 20px;
+    margin-left: 65px;
+    height: 255px;
+}
+
+.car_repair_text-cr{
+    color: white;
+    font-size: 32px;
+    margin-right: 20px;
+    margin-top: 100px;
+}
+
+.grid-container_2-cr{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px;
+}
+
+.price-column-1-cr{
+    color: white;
+    font-size: 24px;
+}
+
+.price-column-2-cr{
+    color: white;
+    font-size: 24px;
+}
+
+/* Service Grid Styling Engine Swap -----------------------------------------------------------------------------------------------------*/
+
+.grid-container-es{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    margin-left: 300px;
+    margin-right: 40px;
+    background-color: rgb(105, 105, 105);
+}
+
+.grid-item-1-es{
+    border-top: 5px solid rgb(255, 242, 0);
+    border-left: 5px solid rgb(255, 242, 0);
+}
+
+.grid-item-2-es{
+    border-top: 5px solid rgb(255, 242, 0);
+    border-right: 5px solid rgb(255, 242, 0);
+}
+
+.grid-item-3-es{
+    border-left: 5px solid rgb(255, 242, 0);
+    border-bottom: 5px solid rgb(255, 242, 0);
+}
+
+.grid-item-4-es{
+    border-right: 5px solid rgb(255, 242, 0);
+    border-bottom: 5px solid rgb(255, 242, 0);
+}
+
+.engine_swap-es{
+    width: 450px;
+    margin-top: 20px;
+    margin-left: 65px;
+    height: 255px;
+}
+
+.engine_swap_text-es{
+    color: white;
+    font-size: 32px;
+    margin-right: 20px;
+    margin-top: 100px;
+}
+
+.grid-container_2-es{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px;
+}
+
+.price-column-1-es{
+    color: white;
+    font-size: 24px;
+}
+
+.price-column-2-es{
+    color: white;
+    font-size: 24px;
+}
+
+/* Service Grid Styling Custom Parts Fabrication -----------------------------------------------------------------------------------------------------*/
+
+.grid-container-cpf{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    margin-left: 300px;
+    margin-right: 40px;
+    background-color: rgb(105, 105, 105);
+}
+
+.grid-item-1-cpf{
+    border-top: 5px solid rgb(255, 242, 0);
+    border-left: 5px solid rgb(255, 242, 09);
+}
+
+.grid-item-2-cpf{
+    border-top: 5px solid rgb(255, 242, 0);
+    border-right: 5px solid rgb(255, 242, 0);
+}
+
+.grid-item-3-cpf{
+    border-left: 5px solid rgb(255, 242, 0);
+    border-bottom: 5px solid rgb(255, 242, 0);
+}
+
+.grid-item-4-cpf{
+    border-right: 5px solid rgb(255, 242, 0);
+    border-bottom: 5px solid rgb(255, 242, 0);
+}
+
+.custom_parts_fabrication-cpf{
+    width: 450px;
+    margin-top: 20px;
+    margin-left: 65px;
+    height: 255px;
+}
+
+.custom_parts_fabrication_text-cpf{
+    color: white;
+    font-size: 32px;
+    margin-right: 20px;
+    margin-top: 100px;
+}
+
+.grid-container_2-cpf{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px;
+}
+
+.price-column-1-cpf{
+    color: white;
+    font-size: 24px;
+}
+
+.price-column-2-cpf{
+    color: white;
+    font-size: 24px;
+}
+
+/* Service Grid Styling Custom Parts Fabrication -----------------------------------------------------------------------------------------------------*/
+
+.grid-container-d{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    margin-left: 300px;
+    margin-right: 40px;
+    background-color: rgb(105, 105, 105);
+}
+
+.grid-item-1-d{
+    border-top: 5px solid rgb(255, 242, 0);
+    border-left: 5px solid rgb(255, 242, 0);
+}
+
+.grid-item-2-d{
+    border-top: 5px solid rgb(255, 242, 0);
+    border-right: 5px solid rgb(255, 242, 0);
+}
+
+.grid-item-3-d{
+    border-left: 5px solid rgb(255, 242, 0);
+    border-bottom: 5px solid rgb(255, 242, 0);
+}
+
+.grid-item-4-d{
+    border-right: 5px solid rgb(255, 242, 0);
+    border-bottom: 5px solid rgb(255, 242, 0);
+}
+
+.delivery-d{
+    width: 450px;
+    margin-top: 20px;
+    margin-left: 65px;
+    height: 255px;
+}
+
+.delivery_text-d{
+    color: white;
+    font-size: 32px;
+    margin-right: 20px;
+    margin-top: 100px;
+}
+
+.grid-container_2-d{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px;
+}
+
+.price-column-1-d{
+    color: white;
+    font-size: 24px;
+}
+
+.price-column-2-d{
+    color: white;
+    font-size: 24px;
+}

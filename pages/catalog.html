@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Gideon Swanson">
+        <title>Twisted Motorcity Customs</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../images/Logo.JPG">
+        <link rel="stylesheet" href="../styles/catalog.css">
+        <link rel="stylesheet" href="../code-reuse/sidebar/CSS/sidebar.css"
+        
+    </head>
+    <header class="header">
+        <img class="logo" src="../images/Logo.JPG">
+        <img class="banner" src="../images/Banner.JPG">
+        <nav class="social-media">
+            <ul>
+                <li><a href="https://www.instagram.com/gids_bike_garage/"><img src="../images/icons8-instagram-24.png"></a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100079176052317"><img src="../images/icons8-facebook-24.png"></a></li>
+                <li><a href="https://www.youtube.com/channel/UCWZ4kfP5AWR34XCB2qriAvw"><img src="../images/icons8-youtube-50.png"></a></li>
+                <li><a href="https://www.tiktok.com/@gideonswanson807?lang=en"><img src="../images/icons8-tiktok-50.png"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="grid-container-menu">
+        <div class="grid-container-home"><a href="../index.html">Home</a></div>
+        <div class="grid-container-catalog"><a href="" style="color: rgb(255, 242, 0);">Catalog</a></div>
+        <div class="grid-container-services"><a href="../pages/services.html">Services</a></div>
+        <div class="grid-container-meet_the_crew"><a href="../pages/meet_the_crew.html">Meet the Crew</a></div>
+        <div class="grid-container-contact"><a href="../pages/contact_us.html">Contact us</a></div>
+    </div>
+        <main>
+            <button id="sidebar-toggle" class="toggle">Toggle Sidebar</button>
+            <div class="sidebar">
+                <div class="sidebar-wrapper">
+                  <h1 class="title">New Motorcycle Parts</h1>
+                  <button class="rotate-btn">Next Category</button>
+                  <ul class="categories">
+                    <li>
+                      <a href="#">Frames</a>
+                      <a href="#">Handlebars</a>
+                      <a href="#">Handlebar Risers</a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+            <script src="../code-reuse/sidebar/JS/sidebar.js"></script>
+            <script src="../code-reuse/sidebar-toggle/JS/sidebar-toggle.js"></script>
+            <script>
+                let sidebar = document.getElementsByClassName("sidebar")[0];
+                let sidebar_content = document.getElementsByClassName("sidebar-wrapper")[0];
+
+                window.onscroll = () => {
+                    let scrollTop = window.scrollY;
+                    let viewportHeight = window.innerHeight;
+                    let contentHeight = sidebar_content.getBoundingClientRect().height;
+
+                    if(scrollTop >= contentHeight - viewportHeight + 260) {
+                        sidebar_content.style.transform = `translateY(-${contentHeight - viewportHeight + 260}px)`;
+                        sidebar_content.style.position = "fixed";
+                    }
+                    else {
+                        sidebar_content.style.transform = "";
+                        sidebar_content.style.position = "";
+                    }
+                }
+            </script>
+        </main>
+        <h2>Catalog</h2>
+        <div class="product-grid"></div>
+        <script>
+            const products = [
+                {
+                    name: "4\" Handlebar Risers Old School",
+                    price: 99.99,
+                    image: "../images/4inRisersOS.png",
+                    url: "../pages/Product Pages/Old_School_Risers.html"
+                },
+                {
+                    name: "4\" Handlebar Risers Square Fins",
+                    price: 99.99,
+                    image: "../images/4inRisers1.png",
+                    url: "../pages/Product Pages/8_Square_Fin_Risers.html"
+                },
+                {
+                    name: "4\" Handlebar Risers Round Fins",
+                    price: "99.99",
+                    image: "../images/4inRisers2.png",
+                    url: "../pages/Product Pages/8_Round_Fin_Risers.html",
+                },
+                {
+                    name: "20\" Ape Hanger Lightning Bars",
+                    price: "800",
+                    image: "../images/Lightning_Bars.PNG",
+                    url: "../pages/Product Pages/Lightning_Bolt_Handlebars.html",
+                },
+                {
+                    name: "Shovelhead Softtail Frame",
+                    price: "1500",
+                    image: "../images/Shovelhead_Softtail.jpg",
+                    url: "../pages/Product Pages/Shovelhead_Frame_Softtail.html",
+                },
+                {
+                    name: "Shovelhead Hardtail Frame",
+                    price: "1500",
+                    image: "../images/Shovelhead_Hardtail.jpg",
+                    url: "../pages/Product Pages/Shovelhead_Frame_Hardtail.html",
+                },
+                {
+                    name: "Brass Hammer",
+                    price: "99.99",
+                    image: "../images/Brass_hammer.png",
+                    url: "../pages/Product Pages/Brass_Hammer.html",
+                },
+                {
+                    name: "Copper Hammer",
+                    price: "99.99",
+                    image: "../images/Copper_hammer.png",
+                    url: "../pages/Product Pages/Copper_Hammer.html",
+                },
+                {
+                    name: "Bronze Hammer",
+                    price: "99.99",
+                    image: "../images/Bronze_Hammer.PNG",
+                    url: "../pages/Product Pages/Bronze_Hammer.html",
+                },
+                {
+                    name: "Nordic Gold Hammer",
+                    price: "99.99",
+                    image: "../images/Nordic_Gold_Hammer.PNG",
+                    url: "../pages/Product Pages/Nordic_Gold_Risers.html",
+                },
+            ];
+
+            function generateProductHTML(products) {
+    let html = "";
+    for (let i = 0; i < products.length; i++) {
+        // Add "column" class to every fourth item
+        let columnClass = '';
+        if ((i + 1) % 4 === 0) {
+            columnClass = 'column';
+        }
+        
+        html += `
+        <div class="grid-item grid-item-${i + 1} ${columnClass}">
+            <a href="${products[i].url}">
+                <img class="${products[i].name}" src="${products[i].image}">
+            
+            <h3>${products[i].name}</h3>
+            <p>$${Number(products[i].price).toFixed(2)}</p>
+            </a>
+        </div>
+        `;
+    }
+    return html;
+}
+
+const productGrid = document.querySelector(".product-grid");
+productGrid.innerHTML = generateProductHTML(products);
+        </script>
+        </div>
+    </body>
+</html>    
